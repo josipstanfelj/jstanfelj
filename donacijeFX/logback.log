@@ -1,0 +1,8 @@
+2024-02-15 16:23:04,175 [JavaFX Application Thread] INFO  c.e.donacijefx.HelloController - The selected username is already registered!
+2024-02-15 18:23:54,734 [Thread-9] INFO  c.e.donacijefx.HelloController - Column "MESSAGE" not found; SQL statement:
+2024-02-15 19:02:37,269 [JavaFX Application Thread] ERROR c.e.donacijefx.HelloController - You entered the wrong password, try again!
+2024-02-15 19:02:42,816 [JavaFX Application Thread] ERROR c.e.donacijefx.HelloController - You entered the wrong password, try again!
+2024-02-15 19:02:46,078 [JavaFX Application Thread] ERROR c.e.donacijefx.HelloController - You entered the wrong password, try again!
+2024-02-15 19:03:16,465 [JavaFX Application Thread] INFO  c.e.donacijefx.HelloController - The selected username is already registered!
+2024-02-15 19:06:04,815 [JavaFX Application Thread] INFO  c.e.donacijefx.HelloController - You have to choose which donation you want to edit!
+2024-02-15 19:06:09,565 [JavaFX Application Thread] INFO  c.e.donacijefx.HelloController - You have to choose which donation you want to edit!
