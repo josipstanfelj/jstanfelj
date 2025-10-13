@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="42.0" prefWidth="850.0" style="-fx-background-color: #0d5d75;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donacijefx.OrganizationMenuController">
+    <children>
+        <MenuBar layoutY="7.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="850.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="My Account">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showMyAccountInformation2" text="My Information" />
+                  <MenuItem mnemonicParsing="false" onAction="#logOut" text="Logout" />
+                    </items></Menu>
+                <Menu mnemonicParsing="false" text="Donations">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showEditDonationScreen" text="Edit Donation" />
+                  <MenuItem mnemonicParsing="false" onAction="#showDeleteDonationScreen" text="Delete Donation" />
+                  <MenuItem mnemonicParsing="false" onAction="#showSuspendDonatorScreen" text="Suspend donator" />
+               </items>
+            </Menu>
+                <Menu mnemonicParsing="false" text="Projects">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showAllProjectsScreen" text="All Projects" />
+               </items></Menu>
+                <Menu mnemonicParsing="false" text="Edit Project">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showEditProjectScreen" text="Edit Project" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Delete Project">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showDeleteProjectScreen" text="Delete Project Now" />
+               </items></Menu>
+                <Menu mnemonicParsing="false" text="Create Project">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showCreateNewProjectScreen" text="Create Project" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Project Data">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#showProjectStatusScreen" text="Current  Project Status " />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#showChangeLogScreen" text="Change Log">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Change log" />
+              </items>
+            </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

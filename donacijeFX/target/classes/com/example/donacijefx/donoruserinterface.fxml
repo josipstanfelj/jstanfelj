@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="575.0" prefWidth="850.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donacijefx.DonorUserInterfaceController">
+    <fx:include source="menubar.fxml" />
+   <Label layoutX="317.0" layoutY="273.0" text="You're now logged in!">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

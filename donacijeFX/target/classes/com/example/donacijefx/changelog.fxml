@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="573.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donacijefx.ChangeLogController">
+    <fx:include source="organizationmenubar.fxml" />
+   <TableView fx:id="changesTableView" layoutX="1.0" layoutY="66.0" prefHeight="490.0" prefWidth="850.0">
+     <columns>
+         <TableColumn fx:id="roleTableColumn" prefWidth="106.0" text="ROLE" />
+       <TableColumn fx:id="tyopeOfChangeTableColumn" prefWidth="187.0" text="TYPE OF CHANGE" />
+       <TableColumn fx:id="dateTableColumn" minWidth="1.0" prefWidth="173.0" text="DATE AND TIME" />
+         <TableColumn fx:id="valueBeforeTableColumn" minWidth="1.0" prefWidth="198.0" text="VALUE BEFORE" />
+         <TableColumn fx:id="valueAfterTableColumn" minWidth="1.0" prefWidth="185.0" text="VALUE AFTER" />
+     </columns>
+   </TableView>
+
+</AnchorPane>

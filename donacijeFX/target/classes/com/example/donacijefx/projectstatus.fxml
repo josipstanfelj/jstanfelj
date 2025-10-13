@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donacijefx.ProjectStatusController">
+    <fx:include source="organizationmenubar.fxml" />
+   <PieChart fx:id="pieChart" layoutX="410.0" layoutY="50.0" prefHeight="280.0" prefWidth="433.0" stylesheets="@piecharstyle.css" />
+   <ListView fx:id="projectListView" layoutX="21.0" layoutY="106.0" prefHeight="320.0" prefWidth="344.0" />
+   <Label layoutX="119.0" layoutY="64.0" text="Show project status">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Button layoutX="142.0" layoutY="469.0" mnemonicParsing="false" onAction="#showProjectStatus" text="Show">
+      <padding>
+         <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+      </padding>
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+   <Label fx:id="notifycationLabel" layoutX="422.0" layoutY="52.0" prefHeight="23.0" prefWidth="397.0" wrapText="true">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <ListView fx:id="donationsListView" layoutX="397.0" layoutY="405.0" prefHeight="163.0" prefWidth="433.0" />
+   <Label layoutX="565.0" layoutY="376.0" text="All donations">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Separator layoutX="376.0" layoutY="42.0" orientation="VERTICAL" prefHeight="534.0" prefWidth="20.0">
+      <padding>
+         <Insets right="10.0" />
+      </padding>
+   </Separator>
+   <Separator layoutX="376.0" layoutY="42.0" orientation="VERTICAL" prefHeight="534.0" prefWidth="3.0" />
+   <Label fx:id="governmentTaxscationLabel" layoutX="408.0" layoutY="351.0" prefHeight="17.0" prefWidth="411.0" text="Government Tax = ">
+      <font>
+         <Font name="System Bold Italic" size="13.0" />
+      </font></Label>
+   <Label fx:id="administrativeCostscationLabel" layoutX="408.0" layoutY="334.0" prefHeight="17.0" prefWidth="411.0" text="Administrative Costs = ">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Label>
+   <Label fx:id="transactionCostscationLabel" layoutX="408.0" layoutY="368.0" prefHeight="17.0" prefWidth="411.0" text="Transaction Costs = ">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Label>
+
+</AnchorPane>

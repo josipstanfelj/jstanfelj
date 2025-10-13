@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="575.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donacijefx.AllProjectsController">
+    <children><fx:include source="menubar.fxml" />
+      <Label layoutX="370.0" layoutY="66.0" text="All projects">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="projectTableView" layoutX="41.0" layoutY="106.0" prefHeight="450.0" prefWidth="769.0">
+        <columns>
+          <TableColumn fx:id="projectNameTableColumn" prefWidth="116.5" text="NAME" />
+          <TableColumn fx:id="descriptionTableColumn" prefWidth="330.0" text="DESCRIPTION" />
+            <TableColumn fx:id="currentAmountTableColumn" prefWidth="157.5" text="CURRENT AMOUNT" />
+            <TableColumn fx:id="targetAmountTableColumn" prefWidth="164.0" text="TARGET AMOUNT" />
+        </columns>
+      </TableView></children>
+</AnchorPane>

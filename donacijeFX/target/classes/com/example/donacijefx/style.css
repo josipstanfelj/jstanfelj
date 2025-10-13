@@ -1,0 +1,58 @@
+
+.root {
+    -fx-background-color: #0d5d75;
+}
+
+.label {
+    -fx-text-fill:  #b1d9e6;
+}
+
+.grid-pane {
+    -fx-background-color: #0d5d75;
+    -fx-padding: 20px;
+    -fx-border-width: 20px;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+.button{
+
+    -fx-background-color: #b1d9e6;
+    -fx-text-fill:#0d5d75 ;
+    -fx-font-weight: bold;
+}
+.button:hover {
+    -fx-font-size: 11pt;
+}
+
+#einLabel {
+    -fx-font-size: 18px;
+}
+
+#organizationTypeLabel {
+    -fx-font-size: 18px;
+}
+
+#establishmentDateLabel {
+    -fx-font-size: 18px;
+}
+.menu-bar{
+    -fx-background-color: #0d5d75;
+    -fx-text-fill: black;
+}
+.menu-item{
+    -fx-background-color: #0d5d75;
+}
+.menu{
+    -fx-background-color: #0d5d75;
+    -fx-border-style: none none solid none;
+    -fx-border-width: 0;
+}
+.menu-button{
+    -fx-background-color: #0d5d75;
+}
+.menu-item:hover{
+    -fx-background-color: #2f819c;
+    -fx-text-fill: #afc4d0;
+}
+
+

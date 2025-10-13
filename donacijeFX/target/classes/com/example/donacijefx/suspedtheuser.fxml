@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donacijefx.SuspendTheUserController">
+    <children><fx:include source="organizationmenubar.fxml" />
+      <ListView fx:id="userListView" layoutX="30.0" layoutY="101.0" prefHeight="200.0" prefWidth="518.0" />
+      <TextArea fx:id="reasonTextArea" layoutX="30.0" layoutY="346.0" prefHeight="172.0" prefWidth="335.0" />
+      <Label layoutX="29.0" layoutY="65.0" text="Select a user :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="316.0" text="Reason for suspension :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="514.0" layoutY="450.0" mnemonicParsing="false" onAction="#suspendUser" prefHeight="62.0" prefWidth="236.0" text="Suspend">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="536.0" layoutY="356.0" mnemonicParsing="false" onAction="#removeFromSuspensionList" prefHeight="44.0" prefWidth="192.0" text="Remove from suspension list">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="suspendedUsersTableView" layoutX="608.0" layoutY="102.0" prefHeight="201.0" prefWidth="210.0">
+        <columns>
+          <TableColumn fx:id="suspendedUserTableColumn" prefWidth="209.00006103515625" text="Suspended Users" />
+        </columns>
+      </TableView></children>
+
+</AnchorPane>
