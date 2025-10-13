@@ -1,0 +1,10 @@
+WebShop za pekarnicu
+
+Projekt uključuje: 
+Prijava i registracija korisnika
+Mogućnosti narudžbe proizvoda i dodavanje u kosaricu.
+Košarica se pohranjuje u bazu podataka i pri idućoj prijavi se učitava na stranici kako bi korisnik mogao nastaviti narudžbe.
+Administrator - admin ima mogućnost dodavanja, editiranja i brisanja proizvoda i kategorija
+Sve narudžbe - admin ima mogućnost pregleda svih narudžbi i mogućnost otkazivanja narudžbi
+Moje narudžbe - user ima mogućnost pregleda i otkazivanja samo vlastitih narudžbi
+
