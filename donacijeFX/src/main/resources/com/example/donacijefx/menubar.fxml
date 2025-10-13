@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="42.0" prefWidth="700.0" style="-fx-background-color: #0d5d75;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donacijefx.MenuController">
+    <children>
+        <MenuBar layoutY="7.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="850.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="My Account">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showMyAccountInformation" text="My Information" />
+                  <MenuItem mnemonicParsing="false" onAction="#logOut" text="Logout" />
+               </items></Menu>
+                <Menu mnemonicParsing="false" text="Donations">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showAllDonationsScreen" text="All Donations" />
+                  <MenuItem mnemonicParsing="false" onAction="#showMyDonationsScreen" text="My Donations" />
+               </items></Menu>
+                <Menu mnemonicParsing="false" text="Projects">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showAllProjectsScreen" text="All Projects" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Edit Donation">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#showEditDonationScreen" text="Edit My Donation" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Cancel Donation">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showDeleteDonationScreen" text="Cancel Donation" />
+               </items></Menu>
+                <Menu mnemonicParsing="false" text="Make New Donation">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showMakeNewDonationScreen" text="New Donation" />
+               </items></Menu>
+            </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </MenuBar>
+    </children>
+</AnchorPane>
