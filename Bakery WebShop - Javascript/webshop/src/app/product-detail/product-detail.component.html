@@ -1,0 +1,30 @@
+<div class="product-detail">
+  <div class="product-header">
+    <h1>Detalji proizvoda</h1>
+  </div>
+
+  <div *ngIf="product; else loading" class="product-info">
+    <div class="product-image">
+      <img [src]="product.image" alt="{{ product.name }}" />
+    </div>
+
+    <div class="product-details">
+      <h2>{{ product.name }}</h2>
+      <p class="product-description">{{ product.description }}</p>
+      <div class="product-price">
+        <span class="price-label">Cijena:</span>
+        <span class="price">{{ product.price | currency }}</span>
+      </div>
+      <div class="product-stock">
+        <span *ngIf="product.stock > 0" class="in-stock">Na skladištu: {{ product.stock }} kom.</span>
+        <span *ngIf="product.stock === 0" class="out-of-stock">Nema na skladištu</span>
+      </div>
+
+      <button (click)="insertToCart(product)" class="add-to-cart" [disabled]="product.stock === 0">Dodaj u košaricu</button>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <p>Učitavanje podataka o proizvodu...</p>
+  </ng-template>
+</div>

@@ -1,0 +1,47 @@
+<div class="profile-container">
+
+
+  <div class="container-info">
+    <h3>Korisnik {{ user.username }}</h3>
+    <div class="user-info">
+      <h4>User data:</h4>
+      <p><strong>Username:</strong> {{ user.username }}</p>
+      <p><strong>E-mail:</strong> {{ user.email }}</p>
+      <p><strong>Name:</strong> {{ user.name }}</p>
+      <p><strong>Role:</strong> {{ user.role }}</p>
+    </div>
+  </div>
+
+  <div class="update-form">
+    <h4>Update your data:</h4>
+    <form (ngSubmit)="updateUser()">
+      <label for="name">Ime</label>
+      <input id="name" [(ngModel)]="user.name" name="name" type="text" required />
+
+      <label for="email">Email</label>
+      <input id="email" [(ngModel)]="user.email" name="email" type="email" required />
+
+      <label for="place">Mjesto</label>
+      <input id="place" [(ngModel)]="user.place" name="place" type="text" />
+
+      <label for="postalCode">Poštanski broj</label>
+      <input id="postalCode" [(ngModel)]="user.postalCode" name="postalCode" type="text" />
+
+      <label for="street">Adresa</label>
+      <input id="street" [(ngModel)]="user.street" name="street" type="text" />
+
+      <label for="phone">Mobitel/Telefon</label>
+      <input id="phone" [(ngModel)]="user.phone" name="phone" type="text" />
+
+      <button type="submit">Ažuriraj moje podatke</button>
+    </form>
+
+    <div *ngIf="successMessage" class="success-message">
+      <p>{{ successMessage }}</p>
+    </div>
+    <div *ngIf="errorMessage" class="error-message">
+      <p>{{ errorMessage }}</p>
+    </div>
+  </div>
+</div>
+
