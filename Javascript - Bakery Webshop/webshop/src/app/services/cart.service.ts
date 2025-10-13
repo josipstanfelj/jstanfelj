@@ -109,7 +109,7 @@ export class CartService {
 
   private updateCart(cart: Cart) {
     this.cart.next(cart);
-    localStorage.setItem('cart', JSON.stringify(cart));  // Spremanje u localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
   }
 
   getTotalPrice(): number {
@@ -149,3 +149,4 @@ export class CartService {
    */
 
 }
+
