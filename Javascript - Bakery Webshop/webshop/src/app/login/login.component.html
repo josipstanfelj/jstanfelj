@@ -1,0 +1,28 @@
+
+<div class="login-container">
+  <h2>Prijava</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Korisničko ime</label>
+      <input type="text" id="username" [(ngModel)]="username" name="username" required>
+    </div>
+
+    <div>
+      <label for="password">Lozinka</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Prijava</button>
+  </form>
+
+  <div *ngIf="message" class="error">
+    {{ message }}
+  </div>
+  <p *ngIf="successMessage" class="success">{{ successMessage }}</p>
+
+  <div class="register-button">
+    <p>Nemaš račun? <a [routerLink]="['/register']">Registriraj se</a></p>
+  </div>
+</div>
+

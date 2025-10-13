@@ -1,0 +1,104 @@
+.orders {
+  text-align: center;
+  padding: 30px 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.orders h1 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.loading-message {
+  font-size: 1.2rem;
+  color: #2980b9;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.orders-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.order-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-status {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #27ae60;
+}
+
+.cancel-button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  background: #a36c39;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-button:hover {
+  background: #8c5c32;
+  transform: scale(1.05);
+}
+
+.cancel-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(163, 108, 57, 0.5);
+}
+
+.no-orders-message {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .order-card {
+    padding: 15px;
+  }
+
+  .cancel-button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+
+
